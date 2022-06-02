@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Survey Form</title>
 </head>
 
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet lectus et quam vulputate rutrum nec eget urna. Vestibulum tincidunt magna justo, nec iaculis purus auctor vel. Mauris semper diam at turpis fringilla, nec fermentum felis vehicula. Curabitur blandit massa neque, ut dictum dui cursus egestas.</p>
-    <form id="survey-form">
-        <fieldset>
-            <label id="namej-label">Name<input id="name" type="text" placeholder="Enter your name" required/></label>
-            <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required/></label>
-            <label id="number-label">Age<input id="number" type="number" placeholder="Age" min="1" max="120" required/></label>
-        </fieldset>
-        <fieldset>
-            <label> Dropdown
-                <select id="dropdown">
-                    <option value="">Select one</option>
-                </select>
-            </label>
-            <label> Radio
-                1 <input name="radio" type="radio" value="1"/>
-            </label>
-            <label>
-                <input type="checkbox" name="checkbox" class="inline" required /> Checkbox
-            </label>
-            <label> Text
-                <textarea name="textarea" rows="3" cols="30" placeholder="Placeholder"></textarea>
-            </label>
-        </fieldset>
-        <input type="submit" value="Submit"/>
-    </form>
+    <header>
+        <h1 id="title">SURVEY FORM</h1>
+    </header>
+    <main> 
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet lectus et quam
+            vulputate rutrum nec eget urna. Vestibulum tincidunt magna justo, nec iaculis purus auctor vel. Mauris
+            semper diam at turpis fringilla, nec fermentum felis vehicula. Curabitur blandit massa neque, ut dictum dui
+            cursus egestas.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name<input id="name" type="text" placeholder=" Enter your name"
+                        required /></label>
+                <label id="email-label">Email<input id="email" type="email" placeholder=" Enter your email"
+                        required /></label>
+                <label id="number-label">Age<input id="number" type="number" placeholder=" Age" min="1" max="120"
+                        required /></label>
+            </fieldset>
+            <fieldset>
+                <label> Dropdown
+                    <select id="dropdown">
+                        <option value="">Select one</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </label>
+                <label>
+                    <input name="radio" type="radio" class="inline" value="1" /> 1
+                </label>
+                <label>
+                    <input name="radio" type="radio" class="inline" value="2" /> 2
+                </label>
+                <label>
+                    <input name="radio" type="radio" class="inline" value="3" /> 3
+                </label>
+
+                <label>
+                    <input type="checkbox" name="checkbox" class="inline" value="1" required /> 1
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox" class="inline" value="2" required /> 2
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox" class="inline" value="3" required /> 3
+                </label>
+
+                <label> Text
+                    <textarea name="textarea" rows="3" cols="30" placeholder=" Placeholder"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+    </main>
 </body>
+
 </html>
