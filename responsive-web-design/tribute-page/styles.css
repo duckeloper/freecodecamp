@@ -1,0 +1,114 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+* { 
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#main {
+    margin: 0;
+    border: none;
+}
+
+nav {
+    text-align: center;
+    margin: 0;
+    padding: 8px 0;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+#img-div {
+    margin: auto;
+    max-width: 900px;
+}
+
+/* 이미지 + 텍스트 전체 */
+#text-on-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* 이미지만 */
+img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+}
+
+/* 이미지 안 텍스트 */
+#text-left {
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    color: white;
+    padding: 0;
+    margin: 15% 60% 0 0;
+    font-size: 15px;
+    text-shadow: 0 0 1px black; 
+}
+
+#text-right {
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    color: white;
+    padding: 0;
+    margin: 15% 0 0 60%;
+    font-size: 15px;
+    text-shadow: 0 0 1px black;
+}
+
+figcaption {
+    text-align: center;
+    color: gray;
+    font-size: 10px;
+}
+
+
+article {
+    padding: 20px;
+    margin: auto;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.important {
+    font-weight: 900;
+}
+
+#tribute-info #profile {
+    color: gray;
+    font-size: 15px;
+}
+
+#tribute-info #description {
+    line-height: 1.625;
+    font-size: 17px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+
+#tribute-link {
+    margin: 10px 0 0;
+    text-decoration: none;
+    color: gray;
+}
