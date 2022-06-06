@@ -1,0 +1,40 @@
+html {
+    background-color: #eee;
+    color: #222;
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 100%;
+    background-color: rgb(225, 149, 149);
+    padding: 10px 50px;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+main {
+    padding: 10px 20px 10px 20px;
+}
+
+p {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
