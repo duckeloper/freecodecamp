@@ -20,9 +20,15 @@
                 <!--
                     When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
                 -->
-                <li class="nav-list"><a class="nav-link">link 1</a></li>
-                <li class="nav-list"><a class="nav-link">link 2</a></li>
-                <li class="nav-list"><a class="nav-link">link 3</a></li>
+                <li class="nav-list">
+                    <a class="nav-link" href="#first-link">link 1</a>
+                </li>
+                <li class="nav-list">
+                    <a class="nav-link" href="#second-link">link 2</a>
+                </li>
+                <li class="nav-list">
+                    <a class="nav-link" href="#third-link">link 3</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -34,31 +40,20 @@
             <img class="images" src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone13-Pro-alpine-green-hero-2up-220308_big_carousel.jpg.slideshow-large_2x.jpg" alt="iPhone 13 Pro" />
         </div>
 
-        
-        
-        <!--
-            You can watch an embedded product video with id="video"
-        -->
         <iframe id="video" src="https://www.youtube.com/embed/XKfgdkcIUxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <!--
-            Your landing page has a form element with a corresponding id="form"
-        -->
-        <!--
-            Within the form, there is an input field with id="email" where you can enter an email address
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p class="input-description">Email</p>
+            <input type="email" id="email" placeholder="Enter your email address">
+            <input type="submit" id="submit" value="Submit" >
+        </form>
 
-            The #email input field should have placeholder text to let users know what the field is for
-
-            The #email input field uses HTML5 validation to confirm that the entered text is an email address
-        -->
-
-        <!--
-            Within the form, there is a submit input with a corresponding id="submit"
-        -->
-
-        <!--
-            When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
-        -->
+        <h3 id="first-link">Link 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, est et fringilla vehicula, nunc mi gravida felis, ac condimentum tortor ligula non risus. Suspendisse aliquet ipsum eget odio feugiat tincidunt. Duis velit tortor, cursus in eleifend sed, vestibulum quis ante. Ut efficitur venenatis nibh, vel congue sem feugiat et. Sed facilisis dolor tortor, id commodo orci facilisis et. Nam venenatis, risus quis commodo mattis, elit ligula maximus urna, sed venenatis felis nulla sit amet sapien. Morbi vehicula elit vitae pellentesque ultricies. Suspendisse porttitor odio eu tempus fringilla. Mauris at ante ligula. In ultrices nulla eleifend, sollicitudin magna eu, pulvinar ex. Pellentesque convallis convallis fringilla. Phasellus et sem eget velit tincidunt rutrum sit amet eget est. Vivamus elementum nulla nec risus ultrices lobortis.</p>
+        <h3 id="second-link">Link 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, est et fringilla vehicula, nunc mi gravida felis, ac condimentum tortor ligula non risus. Suspendisse aliquet ipsum eget odio feugiat tincidunt. Duis velit tortor, cursus in eleifend sed, vestibulum quis ante. Ut efficitur venenatis nibh, vel congue sem feugiat et. Sed facilisis dolor tortor, id commodo orci facilisis et. Nam venenatis, risus quis commodo mattis, elit ligula maximus urna, sed venenatis felis nulla sit amet sapien. Morbi vehicula elit vitae pellentesque ultricies. Suspendisse porttitor odio eu tempus fringilla. Mauris at ante ligula. In ultrices nulla eleifend, sollicitudin magna eu, pulvinar ex. Pellentesque convallis convallis fringilla. Phasellus et sem eget velit tincidunt rutrum sit amet eget est. Vivamus elementum nulla nec risus ultrices lobortis.</p>
+        <h3 id="third-link">Link 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, est et fringilla vehicula, nunc mi gravida felis, ac condimentum tortor ligula non risus. Suspendisse aliquet ipsum eget odio feugiat tincidunt. Duis velit tortor, cursus in eleifend sed, vestibulum quis ante. Ut efficitur venenatis nibh, vel congue sem feugiat et. Sed facilisis dolor tortor, id commodo orci facilisis et. Nam venenatis, risus quis commodo mattis, elit ligula maximus urna, sed venenatis felis nulla sit amet sapien. Morbi vehicula elit vitae pellentesque ultricies. Suspendisse porttitor odio eu tempus fringilla. Mauris at ante ligula. In ultrices nulla eleifend, sollicitudin magna eu, pulvinar ex. Pellentesque convallis convallis fringilla. Phasellus et sem eget velit tincidunt rutrum sit amet eget est. Vivamus elementum nulla nec risus ultrices lobortis.</p>
     </main>
 </body>
 </html>

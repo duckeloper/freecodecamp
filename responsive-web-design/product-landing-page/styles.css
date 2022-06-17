@@ -94,6 +94,7 @@ main {
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    padding: 50px 0 0 0;
 }
 
 .image-container {
@@ -111,7 +112,7 @@ main {
 #video {
     display: block;
     border: 1px solid red;
-    margin: auto;
+    margin: 20px auto;
     width: 70%;
 }
 
@@ -119,7 +120,7 @@ h2 {
     text-align: center;
     font-size: 2rem;
     color: white;
-    text-shadow: 2px 2px 20px black;
+    text-shadow: 2px 2px 10px black;
 }
 
 #title {
@@ -131,4 +132,23 @@ h2 {
 
 strong {
     font-size: 3rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+#email {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.input-description {
+    padding: 0;
+    margin: 0;
 }
