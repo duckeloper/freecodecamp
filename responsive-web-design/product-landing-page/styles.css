@@ -3,17 +3,6 @@
     box-sizing: border-box;
 }
 
-/*
-Your product landing page should have at least one media query
-*/
-
-/*
-Your product landing page should utilize CSS flexbox at least once
-*/
-
-/*
-The navbar should always be at the top of the viewport
-*/
 
 body {
     margin: 0;
@@ -151,4 +140,11 @@ strong {
 .input-description {
     padding: 0;
     margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        background-color: black;
+        color: white;
+    }
 }
