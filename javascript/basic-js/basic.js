@@ -200,3 +200,94 @@ multi-line comment */
 // const wordBlanks = articleCapitalA + space + myAdjective + space + myNoun + space + myVerb + space + myAdverb + period;
 // console.log(wordBlanks);
 
+// Store Multiple Values in one Variable using JavaScript Arrays
+// const myArray = ["a", 1];
+
+// Nest one Array within Another Array
+// const myArray = [["a", 1], ["b", 2]];
+
+// Access Array Data with Indexes
+// const myArray = [50, 60, 70];
+// const myData = myArray[0];
+
+// Modify Array Data With Indexes
+// const myArray = [18, 64, 99];
+// myArray[0] = 45;
+
+// Access Multi-Dimensional Arrays With Indexes
+// const myArray = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+//     [[10, 11, 12], 13, 14],
+//   ];
+//   const myData = myArray[2][1];
+
+// Manipulate Arrays With push()
+// const myArray = [["John", 23], ["cat", 2]];
+// myArray.push(["dog", 3]);
+
+// Manipulate Arrays With pop()
+// const myArray = [["John", 23], ["cat", 2]];
+// const removedFromMyArray = myArray.pop();
+
+// Manipulate Arrays With shift()
+// const myArray = [["John", 23], ["dog", 3]];
+// const removedFromMyArray = myArray.shift();
+
+// Manipulate Arrays With unshift()
+// const myArray = [["John", 23], ["dog", 3]];
+// myArray.shift();
+// myArray.unshift(["Paul", 35]);
+
+// Shopping List
+// const myList = [["a", 1], ["b", 2], ["c", 3], ["d", 4], ["e", 5]];
+
+// Write Reusable JavaScript with Functions
+/* function reusableFunction() {
+    console.log("Hi World");
+  }
+  
+  reusableFunction(); */
+
+// Passing Values to Functions with Arguments
+/* function functionWithArgs(x, y) {
+    console.log(x+y);
+  }
+  
+  functionWithArgs(1, 2); */
+
+// Return a Value from a Function with Return
+/* function timesFive(num) {
+    return num * 5
+  } */
+
+
+  
+
+// Global Scope and Functions
+/* // Declare the myGlobal variable below this line
+const myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+} */
+
+
+
+
+// Local Scope and Functions
