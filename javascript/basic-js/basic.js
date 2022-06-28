@@ -1096,3 +1096,63 @@ const secondTree = myPlants[1].list[1]; */
 
 
 // Record Collection
+/* // Setup
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Only change code below this line
+function updateRecords(records, id, prop, value) {
+  console.log(id + " " + prop + " " + value);
+
+  console.log("checking if prop exists...");
+  const propBool = records[id].hasOwnProperty("tracks");
+  const propContent = records[id][prop];
+  console.log("prop: " + propContent);
+  console.log("propBool: " + propBool);
+  console.log("=====================");
+
+
+  if (prop != "tracks" && value != "") {
+    console.log("prop is not tracks and value isn't an empty string");
+    records[id][prop] = value;
+  } else if (prop == "tracks" && propBool == false) {
+    console.log("prop is tracks but the album doesn't have a tracks prop");
+    records[id][prop] = [];
+    console.log("added an empty tracks array");
+    console.log(records[id][prop]);
+    console.log("adding value to tracks")
+    records[id][prop].push(value);
+    console.log(records[id][prop]);
+  } else if (prop == "tracks" && value != "") {
+    console.log("prop is tracks and value isn't an empty string");
+    records[id][prop].push(value);
+  } else if (value == "") {
+    console.log("value is an empty string");
+    delete records[id][prop];
+  }
+  return records;
+}
+
+updateRecords(recordCollection, 2468, "tracks", "Free") */
+
+
+
+
+
