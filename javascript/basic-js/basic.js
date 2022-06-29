@@ -1156,3 +1156,312 @@ updateRecords(recordCollection, 2468, "tracks", "Free") */
 
 
 
+// Iterate with JavaScript While Loops
+/* // Setup
+const myArray = [];
+
+// Only change code below this line
+let i = 5;
+
+while (i > -1) {
+  myArray.push(i);
+  i--;
+} */
+
+
+
+
+// Iterate with JavaScript For Loops
+/* // Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 1; i < 6; i++) {
+  myArray.push(i);
+} */
+
+
+
+
+// Iterate Odd Numbers With a For Loop
+/* // Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 1; i < 10; i += 2) {
+  myArray.push(i);
+} */
+
+
+
+
+// Count Backwards With a For Loop
+/* // Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 9; i > 0; i -= 2) {
+  myArray.push(i);
+} */
+
+
+
+
+// Iterate Through an Array with a For Loop
+/* // Setup
+const myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+let total = 0;
+for (let i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+} */
+
+
+
+
+// Nesting For Loops
+/* function multiplyAll(arr) {
+  let product = 1;
+  // Only change code below this line
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let subProduct = 1;
+    for (let j = 0; j < arr[i].length; j++) {
+      // multipy the numbers in sub-array
+      subProduct *= arr[i][j];
+    }
+    product *= subProduct;
+  }
+
+  // Only change code above this line
+  return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]); */
+
+
+
+
+// Iterate with JavaScript Do...While Loops
+/* // Setup
+const myArray = [];
+let i = 10;
+
+// Only change code below this line
+do {
+  myArray.push(i);
+  i++;
+} while (i < 11); */
+
+
+
+
+// Replace Loops using Recursion
+/* function sum(arr, n) {
+  // Only change code below this line
+  console.log("n: " + n + "    arr[n - 1]: " + arr[n - 1]);
+  if (n <= 0) {
+    console.log("finishing...");
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1]
+  }
+  // Only change code above this line
+}
+
+
+// test
+const total = sum([6, 5, 4, 3, 2, 1], 5);
+console.log("the result should be: " + 20);
+console.log("result: " + total); */
+
+
+
+
+
+// Profile Lookup
+/* // Setup
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+function lookUpProfile(name, prop) {
+  // Only change code below this line
+
+  // check if name is an actual contact's firstName
+  for (let i = 0; i < contacts.length; i++) {
+    console.log("i: " + i);
+    const num = i + 1;
+    if (contacts[i]["firstName"] == name) {
+      console.log("the name(" + name + ") is valid");
+      console.log("the name was in the " + num + " object");
+      // and the given property "prop" is a property
+      // if true, return the value of that property
+      if (contacts[i].hasOwnProperty(prop) == true) {
+        console.log("the property(" + prop + ") is valid");
+        console.log("the value: " + contacts[i][prop]);
+        return contacts[i][prop];
+      } else {
+        // if prop does not correspond to any,
+        // return the string "No such property"
+        console.log("the prop(" + prop + ") is not valid");
+        return "No such property";
+      }
+    } // if ends
+    
+  } // for loop ends
+    // if name does not correspond to any,
+    // return the string "No such contact"
+    console.log("for loop is over, but couldn't find the name(" + name + ")")
+    console.log("the name(" + name + ") is not valid");
+    return "No such contact"
+  
+  
+
+  // Only change code above this line
+} // function ends
+
+lookUpProfile("Akira", "likes");
+lookUpProfile("Kristian", "lastName") */
+
+
+
+
+// Generate Random Fractions with JavaScript
+/* function randomFraction() {
+
+  // Only change code below this line
+
+  return Math.random();
+
+  // Only change code above this line
+} */
+
+
+
+
+// Generate Random Whole Numbers with JavaScript
+/* function randomWholeNum() {
+
+  // Only change code below this line
+
+  return Math.floor(Math.random() * 10);
+}
+
+console.log (randomWholeNum()); */
+
+
+
+
+// Generate Random Whole Numbers within a Range
+/* function randomRange(myMin, myMax) {
+  // Only change code below this line
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  // Only change code above this line
+}
+ */
+
+
+
+
+// Use the parseInt Function
+/* function convertToInteger(str) {
+  return parseInt(str);
+
+}
+
+convertToInteger("56"); */
+
+
+
+
+// Use the parseInt Function with a Radix
+/* function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+
+convertToInteger("10011"); */
+
+
+
+
+// Use the Conditional (Ternary) Operator
+/* function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal";
+}
+
+checkEqual(1, 2); */
+
+
+
+
+// Use Multiple Conditional (Ternary) Operators
+/* function checkSign(num) {
+  return (num > 0) ? "positive"
+    : (num == 0) ? "zero"
+    : "negative";
+}
+
+checkSign(10); */
+
+
+
+
+// Use Recursion to Create a Countdown
+/* // Only change code below this line
+function countdown(n){
+  if (n < 1) {
+    return [];
+  } else { // until n is 0
+    const countArray = countdown(n - 1);
+    countArray.unshift(n);
+    return countArray;// push number to empty array
+  }
+  return;
+}
+// Only change code above this line
+
+console.log(countdown(5)); */
+
+
+
+
+// Use Recursion to Create a Range of Numbers
+/* function rangeOfNumbers(startNum, endNum) {
+  if (startNum == endNum) {
+    console.log("startNum: " + startNum + " endNum: " + endNum);
+    return [startNum];
+  } else {
+    console.log("startNum: " + startNum + " endNum: " + endNum);
+    const numbersArray = rangeOfNumbers(startNum + 1, endNum);
+    console.log("numbersArray: " + numbersArray);
+    numbersArray.unshift(startNum);
+    return numbersArray;
+  }
+};
+
+console.log(rangeOfNumbers(4, 6)); */
