@@ -180,3 +180,150 @@ booWho(null); */
 
 
 
+// Title Case a Sentence
+/* function titleCase(str) {
+  let letterCount = 1;
+  let newStr = "";
+  for (let i = 0; i < str.length; i++) {
+    console.log("i: " + i + " letterCount: " + letterCount);
+    console.log("inspecting: " + str[i]);
+    if (str[i] == " ") {
+      console.log("space found, updating letterCount to 0");
+      letterCount = 1;
+      newStr += str[i];
+    } else {
+      if (letterCount == 1) {
+        console.log("toUpper: " + str[i]);
+        newStr += str[i].toUpperCase();
+        console.log("letterCount: " + letterCount + "     " + newStr);
+      } else {
+        console.log("toLower: " + str[i]);
+        newStr += str[i].toLowerCase();
+        console.log(newStr);
+      }
+      letterCount += 1;
+    }
+  }
+  return newStr;
+}
+
+titleCase("I'm a"); */
+
+
+
+
+// Slice and Splice
+/* function frankenSplice(arr1, arr2, n) {
+  let newArr = [];
+  if (arr2.length > n) {
+  for (let i = 0; i < arr2.length; i++) {
+    console.log('i: ' + i + ' arr1[i]: ' + arr2[i]);
+    if (i == n) {
+      console.log("i(" + i + ") = n(" + n + ")");
+      for (let j = 0; j < arr1.length; j++) {
+        newArr.push(arr1[j]);
+      }
+    }
+    newArr.push(arr2[i]);
+    console.log(newArr);
+  }
+  } else {
+    newArr = arr2.slice();
+    for (let j = 0; j < arr1.length; j++) {
+        newArr.push(arr1[j]);
+      }
+    console.log(newArr);
+  }
+
+  return newArr;
+}
+
+frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2)
+ */
+
+
+
+
+// Falsy Bouncer
+/* function bouncer(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    console.log("inspecting arr[i](" + arr[i] + ")     bool: " + !!arr[i]);
+    if (!!arr[i]) {
+      newArr.push(arr[i]);
+    }
+  }
+  console.log("newArr: " + newArr);
+  return newArr;
+}
+
+bouncer([7, "ate", "", false, 9]); */
+
+
+
+
+// Where do I Belong
+/* function getIndexToIns(arr, num) {
+  let sortedArr = arr.slice();
+  sortedArr.push(num);
+  sortedArr = sortedArr.sort(function(a, b) {return a - b});
+  console.log(`sortedArr ${sortedArr}`)
+
+  let numIndex = sortedArr.indexOf(num);
+  console.log("numIndex: " + numIndex);
+  return numIndex;
+}
+
+getIndexToIns([40, 60], 50); */
+
+
+
+
+// Mutations
+/* function mutation(arr) {
+  let arrFirst = arr[0].toLowerCase();
+  let arrSecond = arr[1].toLowerCase();
+  console.log(`arr[0](${arrFirst}) arr[1](${arrSecond})`)
+
+  for (let i = 0; i < arrSecond.length; i++) {
+    console.log(`inspecting ${arrSecond[i]}`)
+    if(arrFirst.includes(arrSecond[i]) == false) {
+      console.log(arrSecond[i] + " is not in " + arrFirst);
+      return false;
+    }
+    
+  }
+  return true;
+}
+
+mutation(["Mary", "Army"]) */
+
+
+
+
+// Chunky Monkey
+/* function chunkArrayInGroups(arr, size) {
+  let newArr = [];
+  let tempArr = [];
+  let count = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    tempArr.push(arr[i]);
+    count += 1;
+    if (count == size) {
+      console.log('tempArr: ' + tempArr);
+      newArr.push(tempArr);
+      tempArr = [];
+      count = 0;
+    }
+  }
+  
+  if (tempArr.length > 0) {
+    console.log('tempArr: ' + tempArr);
+    newArr.push(tempArr);
+  }
+
+  return newArr;
+}
+
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3) */
