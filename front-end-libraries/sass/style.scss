@@ -1,9 +1,10 @@
-$text-color: red;
+.blog-post {
+    h1 {
+        text-align: center;
+        color: blue;
+    }
 
-.header {
-    text-align: center;
-}
-
-.blog-post, h2 {
-    color: $text-color;
+    p {
+        font-size: 20px;
+    }
 }
