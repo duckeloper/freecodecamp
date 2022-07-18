@@ -1,9 +1,15 @@
-.blog-post h1 {
+h3 {
   text-align: center;
-  color: blue;
 }
-.blog-post p {
-  font-size: 20px;
+
+.info, .info-important {
+  width: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.info-important {
+  background-color: magenta;
 }
 
 /*# sourceMappingURL=style.css.map */
